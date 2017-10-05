@@ -17,6 +17,12 @@
         <div class="img-wrap" >
             <img ng-src="{{product.images[gallery.imageIndex]}}" class="img-thumb" />
         </div>
+        <ul >
+            <li class="small-img" ng-repeat= "image in product.images" ng-click="gallery.changeImageIndex($index)">
+                <img ng-src="{{image}}" width = 50px/>
+            </li>
+
+        </ul>
 </div>
 </div>
 </body>
