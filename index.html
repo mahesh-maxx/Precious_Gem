@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Precious Gem Store</title>
-        <script src="angular.js"></script>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
 </head>
-<body>
-<h1 align="center">Precious Gem Store</h1>
-<h2 align="center">===Welcome to the Precious Gem Store===</h2>
-
+<body ng-controller="StoreController as store">
+<header>
+    <h1 align="center">Precious Gem Store</h1>
+    <h2 align="center">===Welcome to the Precious Gem Store===</h2>
+</header>
+    <div class="product" ng-repeat="product in store.products | orderBy : '-price'">
+       <h3 align="center" >Gem # {{$index + 1}} : {{product.name | uppercase}} <em class="right">{{product.price | currency}}</em> </h3>
+    <div ng-show = "product.images.length" ng-controller="GalleryController as gallery">
+        <div class="img-wrap" >
+            <img ng-src="{{product.images[gallery.imageIndex]}}" class="img-thumb" />
+        </div>
+</div>
+</div>
 </body>
 </html>

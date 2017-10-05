@@ -1,10 +1,10 @@
 
-    var app = angular.module('Gemstore', ['store-directives']);
+    var app = angular.module('Gemstore', []);
     app.controller('StoreController', function () {
             this.products = gems;
         }
     );
-    app.controller('GalleryController', function () {
+   app.controller('GalleryController', function () {
         this.imageIndex = 0;
         this.changeImageIndex = function (image) {
             this.imageIndex = image || 0;
