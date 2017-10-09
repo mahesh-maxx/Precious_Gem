@@ -5,6 +5,7 @@
     <title>Precious Gem Store</title>
     <script src="angular.js"></script>
     <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body ng-controller="StoreController as store">
 <header>
@@ -14,10 +15,10 @@
     <div class="product" ng-repeat="product in store.products | orderBy : '-price'">
        <h3 align="center" >Gem # {{$index + 1}} : {{product.name | uppercase}} <em class="right">{{product.price | currency}}</em> </h3>
     <div ng-show = "product.images.length" ng-controller="GalleryController as gallery">
-        <div class="img-wrap" >
+        <div class="img-wrap">
             <img ng-src="{{product.images[gallery.imageIndex]}}" class="img-thumb" />
         </div>
-        <ul >
+        <ul id="thumbs">
             <li class="small-img" ng-repeat= "image in product.images" ng-mouseover="gallery.changeImageIndex($index)">
                 <img ng-src="{{image}}" width = 50px/>
             </li>
