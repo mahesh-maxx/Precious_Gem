@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2567639-fe76-49bd-89d9-bcb0bca2a9d6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -79,7 +77,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -150,7 +148,7 @@
       <updated>1507212147763</updated>
       <workItem from="1507212149118" duration="7744000" />
       <workItem from="1507407686043" duration="289000" />
-      <workItem from="1507566872237" duration="2199000" />
+      <workItem from="1507566872237" duration="2321000" />
     </task>
     <task id="LOCAL-00001" summary="added store controller">
       <created>1507215381380</created>
@@ -194,14 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1507229501689</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding style sheet">
+      <created>1507569100349</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1507569100349</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10232000" />
+    <option name="totallyTimeSpent" value="10354000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -236,7 +241,8 @@
     <MESSAGE value="displayed product name &amp; images" />
     <MESSAGE value="added changing images" />
     <MESSAGE value="Added description &amp; specification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added description &amp; specification" />
+    <MESSAGE value="adding style sheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding style sheet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
