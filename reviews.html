@@ -1,0 +1,12 @@
+<div class="review" >
+    <ul>
+        <li class="review_list" ng-repeat="review in product.reviews" >
+    <h4>Reviews</h4>
+    <strong>{{review.stars}} Stars</strong>
+    {{review.body}}
+    <em >-- {{review.author}} on {{review.createdOn | Date}}</em>
+        </li>
+    </ul>
+
+
+</div>

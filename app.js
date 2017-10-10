@@ -74,7 +74,7 @@
         shine: 70,
         price: 1100,
         rarity: 2,
-        color: '#000',
+        color: '#a52f96',
         faces: 6,
         images: [
             "img/gem-06.gif",
