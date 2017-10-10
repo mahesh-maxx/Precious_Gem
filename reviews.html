@@ -16,7 +16,7 @@
             <em > -- {{reviews.review.author}}</em>
         </blockquote>
         <h4>Submit a Review</h4>
-        <select ng-model="reviews.review.stars" ng-options="star for stars in [5,4,3,2,1]" title="stars" >
+        <select ng-model="reviews.review.stars" ng-options="stars for stars in [5,4,3,2,1]" title="stars" >
             <option value="">Rate the Product</option>
         </select>
         <textarea ng-model="reviews.review.body" placeholder="Please write about the product" title="Review"></textarea>
