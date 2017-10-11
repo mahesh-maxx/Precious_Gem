@@ -12,7 +12,7 @@
     <h1 align="center">Precious Gem Store</h1>
     <h2 align="center">===Welcome to the Precious Gem Store===</h2>
 </header>
-    <div class="product" ng-repeat="product in store.products | orderBy : '-price'">
+<div class="product" ng-repeat="product in store.products | orderBy : '-price'">
        <h3 align="center" >Gem # {{$index + 1}} : {{product.name | uppercase}} <em class="right">{{product.price | currency}}</em> </h3>
     <div ng-show = "product.images.length" ng-controller="GalleryController as gallery">
         <div class="img-wrap">
@@ -69,23 +69,24 @@
                 </li>
             </ul>
                           <form name="review_form" class="reviewForm" ng-controller="ReviewController as reviews" ng-submit="reviews.addReview(product)" ng-show="tab.isSet(3)">
-                              <blockquote ng-show="reviews.review.stars" >
-                                  <strong>{{reviews.review.stars}} Stars</strong>
-                                  {{reviews.review.body}}
-                                  <em > By : {{reviews.review.author}}</em>
+                              <blockquote ng-show="reviews.Review.stars" >
+                                  <strong>{{reviews.Review.stars}} Stars</strong>
+                                  <br />
+                                  {{reviews.Review.body}}
+                                  <br />
+                                  <em > By : {{reviews.Review.author}}</em>
                               </blockquote>
                               <h4 class="text-wrap">Submit a Review</h4>
-                              <select ng-model="reviews.review.stars" ng-options="stars for stars in [5,4,3,2,1]" title="stars" class="option-wrap">
+                              <select ng-model="reviews.Review.stars" ng-options="stars for stars in [5,4,3,2,1]" title="stars" class="option-wrap">
                                   <option value="">Rate the Product</option>
                               </select> <br /> <br />
-                              <textarea ng-model="reviews.review.body" placeholder="Please write about the product" title="Review" class="text-wrap"></textarea>
+                              <textarea ng-model="reviews.Review.body" placeholder="Please write about the product" title="Review" class="text-wrap"></textarea>
                               <br /> <br />
-                              <input ng-model="reviews.review.author" placeholder="abc@xyz.com" title="E-mail" type="email" class="email-wrap" />
+                              <input ng-model="reviews.Review.author" placeholder="abc@xyz.com" title="E-mail" type="email" class="email-wrap" />
                               <br /> <br />
                               <input type="submit" value="Submit Review" class="button-wrap"/>
                           </form>
                       </div>
                       </div>
-</div>
 </body>
 </html>

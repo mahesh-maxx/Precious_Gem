@@ -10,12 +10,12 @@
         };
     });
 
-    app.controller('ReviewController', function () {
-        this.review = {};
+    app.controller("ReviewController", function () {
+        this.Review = {};
         this.addReview = function (product) {
-            this.product.createdOn = Date.now();
-            product.review.push(this.review);
-            this.review = {};
+            this.Review.createdOn = Date.now();
+            product.reviews.push(this.Review);
+            this.Review = {};
         };
     });
     app.controller ('tabController', function () {
