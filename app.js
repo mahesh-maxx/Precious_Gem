@@ -1,9 +1,8 @@
-
-    var app = angular.module('Gemstore', []);
+(function() {
+    var app = angular.module('gemStore', []);
     app.controller('StoreController', function () {
             this.products = gems;
-        }
-    );
+    });
    app.controller('GalleryController', function () {
         this.imageIndex = 0;
         this.changeImageIndex = function (image) {
@@ -15,12 +14,22 @@
         this.review = {};
         this.addReview = function (product) {
             this.product.createdOn = Date.now();
-            this.product.review.push(this.review);
+            product.review.push(this.review);
             this.review = {};
         };
     });
+    app.controller ('tabController', function () {
+        this.tab = 1;
+        this.isSet = function (checkTab) {
+            return this.tab === checkTab;
+        };
+        this.setTab = function (activeTab) {
+            this.tab = activeTab;
+        };
 
-    var gems = [{
+    });
+
+    var gems =  [{
         name: 'Azurite',
         description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
         shine: 8,
@@ -55,7 +64,7 @@
         images: [
             "img/gem-01.gif",
             "img/gem-03.gif",
-            "img/gem-04.gif",
+            "img/gem-04.gif"
         ],
         reviews: [{
             stars: 3,
@@ -98,3 +107,4 @@
             createdOn: 1397490980837
         }]
     }];
+    })();
